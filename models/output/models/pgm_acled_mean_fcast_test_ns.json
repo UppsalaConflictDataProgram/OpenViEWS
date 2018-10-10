@@ -1,0 +1,28 @@
+{
+    "name": "pgm_acled_mean_fcast_test_ns",
+    "name_base": "pgm_acled_mean",
+    "loa": "pgm",
+    "lhs": "ged_dummy_ns",
+    "rhs": [
+        "mean_ged_dummy_ns"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_ns ~ mean_ged_dummy_ns",
+    "transforms": [
+        {
+            "name": "mean_ged_dummy_ns",
+            "f": "mean",
+            "var": "ged_dummy_ns",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "ns",
+    "train_start": 205,
+    "train_end": 464,
+    "sim_start": 465,
+    "sim_end": 502,
+    "runtype": "fcast",
+    "period": "test"
+}

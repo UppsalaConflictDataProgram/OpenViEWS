@@ -1,0 +1,17 @@
+scipy=0.19.1
+pandas
+numpy
+matplotlib=2.0.2 # versions past this break map plotting 
+basemap
+sqlalchemy
+psycopg2
+pysal
+fiona
+patsy
+h5py
+pytables
+mpi4py
+statsmodels
+numba
+Jinja2
+beautifulsoup4

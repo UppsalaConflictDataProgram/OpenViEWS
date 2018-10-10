@@ -1,0 +1,326 @@
+{
+    "name": "pgm_acled_wcm_fcast_test_os",
+    "name_base": "pgm_acled_wcm",
+    "loa": "pgm",
+    "lhs": "ged_dummy_os",
+    "rhs": [
+        "l2_ged_dummy_os",
+        "l3_ged_dummy_os",
+        "l4_ged_dummy_os",
+        "l5_ged_dummy_os",
+        "l6_ged_dummy_os",
+        "l7_ged_dummy_os",
+        "l8_ged_dummy_os",
+        "l9_ged_dummy_os",
+        "l10_ged_dummy_os",
+        "l11_ged_dummy_os",
+        "l12_ged_dummy_os",
+        "q_1_1_l2_ged_dummy_os",
+        "q_1_1_l3_ged_dummy_os",
+        "l1_ged_dummy_sb",
+        "l1_ged_dummy_ns",
+        "l1_ged_dummy_os",
+        "l1_acled_dummy_pr",
+        "decay_12_cw_ged_dummy_sb_0",
+        "decay_12_cw_ged_dummy_ns_0",
+        "decay_12_cw_ged_dummy_os_0",
+        "decay_12_cw_acled_dummy_pr_0",
+        "q_1_1_l1_ged_dummy_sb",
+        "q_1_1_l1_ged_dummy_ns",
+        "q_1_1_l1_ged_dummy_os",
+        "q_1_1_l1_acled_dummy_pr",
+        "ln_dist_diamsec",
+        "ln_dist_petroleum",
+        "agri_ih_li",
+        "barren_ih_li",
+        "forest_ih_li",
+        "mountains_mean",
+        "savanna_ih_li",
+        "shrub_ih_li",
+        "pasture_ih_li",
+        "urban_ih_li",
+        "ln_bdist3",
+        "ln_ttime",
+        "ln_capdist",
+        "ln_pop",
+        "gcp_li_mer",
+        "imr_mean",
+        "excluded_dummy_li",
+        "fvp_lngdpcap_nonoilrent",
+        "fvp_lngdpcap_oilrent",
+        "fvp_grgdpcap_oilrent",
+        "fvp_grgdpcap_nonoilrent",
+        "ln_fvp_timeindep",
+        "ln_fvp_timesincepreindepwar",
+        "ln_fvp_timesinceregimechange",
+        "fvp_demo",
+        "fvp_semi",
+        "fvp_prop_excluded",
+        "ln_fvp_population200",
+        "ssp2_edu_sec_15_24_prop",
+        "ssp2_urban_share_iiasa"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_os ~ l2_ged_dummy_os + l3_ged_dummy_os + l4_ged_dummy_os + l5_ged_dummy_os + l6_ged_dummy_os + l7_ged_dummy_os + l8_ged_dummy_os + l9_ged_dummy_os + l10_ged_dummy_os + l11_ged_dummy_os + l12_ged_dummy_os + q_1_1_l2_ged_dummy_os + q_1_1_l3_ged_dummy_os + l1_ged_dummy_sb + l1_ged_dummy_ns + l1_ged_dummy_os + l1_acled_dummy_pr + decay_12_cw_ged_dummy_sb_0 + decay_12_cw_ged_dummy_ns_0 + decay_12_cw_ged_dummy_os_0 + decay_12_cw_acled_dummy_pr_0 + q_1_1_l1_ged_dummy_sb + q_1_1_l1_ged_dummy_ns + q_1_1_l1_ged_dummy_os + q_1_1_l1_acled_dummy_pr + ln_dist_diamsec + ln_dist_petroleum + agri_ih_li + barren_ih_li + forest_ih_li + mountains_mean + savanna_ih_li + shrub_ih_li + pasture_ih_li + urban_ih_li + ln_bdist3 + ln_ttime + ln_capdist + ln_pop + gcp_li_mer + imr_mean + excluded_dummy_li + fvp_lngdpcap_nonoilrent + fvp_lngdpcap_oilrent + fvp_grgdpcap_oilrent + fvp_grgdpcap_nonoilrent + ln_fvp_timeindep + ln_fvp_timesincepreindepwar + ln_fvp_timesinceregimechange + fvp_demo + fvp_semi + fvp_prop_excluded + ln_fvp_population200 + ssp2_edu_sec_15_24_prop + ssp2_urban_share_iiasa",
+    "transforms": [
+        {
+            "name": "l12_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 12,
+            "type": "ts"
+        },
+        {
+            "name": "l8_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 8,
+            "type": "ts"
+        },
+        {
+            "name": "l3_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 3,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_os",
+            "var": "l1_ged_dummy_os",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l9_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 9,
+            "type": "ts"
+        },
+        {
+            "name": "l10_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 10,
+            "type": "ts"
+        },
+        {
+            "name": "cw_ged_dummy_ns_0",
+            "var": "ged_dummy_ns",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "l5_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 5,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_os_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_os_0",
+            "type": "transform"
+        },
+        {
+            "name": "ln_dist_diamsec",
+            "f": "log_natural",
+            "var": "dist_diamsec_s_wgs",
+            "type": "transform"
+        },
+        {
+            "name": "l11_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 11,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_acled_dummy_pr_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_acled_dummy_pr_0",
+            "type": "transform"
+        },
+        {
+            "name": "l6_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 6,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l1_acled_dummy_pr",
+            "var": "l1_acled_dummy_pr",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l7_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 7,
+            "type": "ts"
+        },
+        {
+            "name": "cw_ged_dummy_os_0",
+            "var": "ged_dummy_os",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "cw_acled_dummy_pr_0",
+            "var": "acled_dummy_pr",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_sb_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_sb_0",
+            "type": "transform"
+        },
+        {
+            "name": "ln_capdist",
+            "f": "log_natural",
+            "var": "capdist_li",
+            "type": "transform"
+        },
+        {
+            "name": "ln_bdist3",
+            "f": "log_natural",
+            "var": "bdist3",
+            "type": "transform"
+        },
+        {
+            "name": "l4_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 4,
+            "type": "ts"
+        },
+        {
+            "name": "l1_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_ns_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_ns_0",
+            "type": "transform"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_sb",
+            "var": "l1_ged_dummy_sb",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "ln_dist_petroleum",
+            "f": "log_natural",
+            "var": "dist_petroleum_s_wgs",
+            "type": "transform"
+        },
+        {
+            "name": "ln_fvp_timesincepreindepwar",
+            "f": "log_natural",
+            "var": "fvp_timesincepreindepwar",
+            "type": "transform"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_ns",
+            "var": "l1_ged_dummy_ns",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "ln_fvp_population200",
+            "f": "log_natural",
+            "var": "fvp_population200",
+            "type": "transform"
+        },
+        {
+            "name": "l1_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "cw_ged_dummy_sb_0",
+            "var": "ged_dummy_sb",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "l2_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 2,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l3_ged_dummy_os",
+            "var": "l3_ged_dummy_os",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l1_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "ln_fvp_timesinceregimechange",
+            "f": "log_natural",
+            "var": "fvp_timesinceregimechange",
+            "type": "transform"
+        },
+        {
+            "name": "ln_ttime",
+            "f": "log_natural",
+            "var": "ttime_mean",
+            "type": "transform"
+        },
+        {
+            "name": "ln_pop",
+            "f": "log_natural",
+            "var": "pop_li_gpw_sum",
+            "type": "transform"
+        },
+        {
+            "name": "q_1_1_l2_ged_dummy_os",
+            "var": "l2_ged_dummy_os",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "ln_fvp_timeindep",
+            "f": "log_natural",
+            "var": "fvp_timeindep",
+            "type": "transform"
+        },
+        {
+            "name": "l1_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 1,
+            "type": "ts"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "os",
+    "train_start": 205,
+    "train_end": 464,
+    "sim_start": 465,
+    "sim_end": 502,
+    "runtype": "fcast",
+    "period": "test"
+}

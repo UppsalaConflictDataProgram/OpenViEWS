@@ -1,0 +1,219 @@
+{
+    "name": "cm_acled_base_eval_test_sb",
+    "name_base": "cm_acled_base",
+    "loa": "cm",
+    "lhs": "ged_dummy_sb",
+    "rhs": [
+        "l2_ged_dummy_sb",
+        "l3_ged_dummy_sb",
+        "l4_ged_dummy_sb",
+        "l5_ged_dummy_sb",
+        "l6_ged_dummy_sb",
+        "l7_ged_dummy_sb",
+        "l8_ged_dummy_sb",
+        "l9_ged_dummy_sb",
+        "l10_ged_dummy_sb",
+        "l11_ged_dummy_sb",
+        "l12_ged_dummy_sb",
+        "l1_ged_dummy_sb",
+        "l1_ged_dummy_ns",
+        "l1_ged_dummy_os",
+        "l1_acled_dummy_pr",
+        "decay_12_cw_ged_dummy_sb_0",
+        "decay_12_cw_ged_dummy_ns_0",
+        "decay_12_cw_ged_dummy_os_0",
+        "decay_12_cw_acled_dummy_pr_0",
+        "fvp_lngdpcap_nonoilrent",
+        "fvp_lngdpcap_oilrent",
+        "fvp_grgdpcap_oilrent",
+        "fvp_grgdpcap_nonoilrent",
+        "ln_fvp_timeindep",
+        "ln_fvp_timesincepreindepwar",
+        "ln_fvp_timesinceregimechange",
+        "fvp_demo",
+        "fvp_semi",
+        "fvp_prop_excluded",
+        "ln_fvp_population200",
+        "ssp2_edu_sec_15_24_prop",
+        "ssp2_urban_share_iiasa"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_sb ~ l2_ged_dummy_sb + l3_ged_dummy_sb + l4_ged_dummy_sb + l5_ged_dummy_sb + l6_ged_dummy_sb + l7_ged_dummy_sb + l8_ged_dummy_sb + l9_ged_dummy_sb + l10_ged_dummy_sb + l11_ged_dummy_sb + l12_ged_dummy_sb + l1_ged_dummy_sb + l1_ged_dummy_ns + l1_ged_dummy_os + l1_acled_dummy_pr + decay_12_cw_ged_dummy_sb_0 + decay_12_cw_ged_dummy_ns_0 + decay_12_cw_ged_dummy_os_0 + decay_12_cw_acled_dummy_pr_0 + fvp_lngdpcap_nonoilrent + fvp_lngdpcap_oilrent + fvp_grgdpcap_oilrent + fvp_grgdpcap_nonoilrent + ln_fvp_timeindep + ln_fvp_timesincepreindepwar + ln_fvp_timesinceregimechange + fvp_demo + fvp_semi + fvp_prop_excluded + ln_fvp_population200 + ssp2_edu_sec_15_24_prop + ssp2_urban_share_iiasa",
+    "transforms": [
+        {
+            "name": "l10_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 10,
+            "type": "ts"
+        },
+        {
+            "name": "l3_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 3,
+            "type": "ts"
+        },
+        {
+            "name": "l12_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 12,
+            "type": "ts"
+        },
+        {
+            "name": "cw_ged_dummy_ns_0",
+            "var": "ged_dummy_ns",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_os_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_os_0",
+            "type": "transform"
+        },
+        {
+            "name": "l7_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 7,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_acled_dummy_pr_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_acled_dummy_pr_0",
+            "type": "transform"
+        },
+        {
+            "name": "cw_ged_dummy_os_0",
+            "var": "ged_dummy_os",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "cw_acled_dummy_pr_0",
+            "var": "acled_dummy_pr",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_sb_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_sb_0",
+            "type": "transform"
+        },
+        {
+            "name": "l9_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 9,
+            "type": "ts"
+        },
+        {
+            "name": "l4_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 4,
+            "type": "ts"
+        },
+        {
+            "name": "l2_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 2,
+            "type": "ts"
+        },
+        {
+            "name": "l1_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_ns_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_ns_0",
+            "type": "transform"
+        },
+        {
+            "name": "l8_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 8,
+            "type": "ts"
+        },
+        {
+            "name": "l5_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 5,
+            "type": "ts"
+        },
+        {
+            "name": "ln_fvp_timesincepreindepwar",
+            "f": "log_natural",
+            "var": "fvp_timesincepreindepwar",
+            "type": "transform"
+        },
+        {
+            "name": "ln_fvp_population200",
+            "f": "log_natural",
+            "var": "fvp_population200",
+            "type": "transform"
+        },
+        {
+            "name": "l1_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "cw_ged_dummy_sb_0",
+            "var": "ged_dummy_sb",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "l1_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "ln_fvp_timesinceregimechange",
+            "f": "log_natural",
+            "var": "fvp_timesinceregimechange",
+            "type": "transform"
+        },
+        {
+            "name": "l11_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 11,
+            "type": "ts"
+        },
+        {
+            "name": "l6_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 6,
+            "type": "ts"
+        },
+        {
+            "name": "ln_fvp_timeindep",
+            "f": "log_natural",
+            "var": "fvp_timeindep",
+            "type": "transform"
+        },
+        {
+            "name": "l1_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 1,
+            "type": "ts"
+        }
+    ],
+    "groupvar": "country_id",
+    "timevar": "month_id",
+    "outcome_extension": "sb",
+    "train_start": 205,
+    "train_end": 420,
+    "sim_start": 421,
+    "sim_end": 456,
+    "runtype": "eval",
+    "period": "test"
+}

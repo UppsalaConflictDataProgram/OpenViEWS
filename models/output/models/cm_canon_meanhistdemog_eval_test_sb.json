@@ -1,0 +1,114 @@
+{
+    "name": "cm_canon_meanhistdemog_eval_test_sb",
+    "name_base": "cm_canon_meanhistdemog",
+    "loa": "cm",
+    "lhs": "ged_dummy_sb",
+    "rhs": [
+        "l2_ged_dummy_sb",
+        "l3_ged_dummy_sb",
+        "l4_ged_dummy_sb",
+        "l5_ged_dummy_sb",
+        "l6_ged_dummy_sb",
+        "l7_ged_dummy_sb",
+        "l8_ged_dummy_sb",
+        "l9_ged_dummy_sb",
+        "l10_ged_dummy_sb",
+        "l11_ged_dummy_sb",
+        "l12_ged_dummy_sb",
+        "mean_ged_dummy_sb",
+        "ln_fvp_population200",
+        "ssp2_edu_sec_15_24_prop",
+        "ssp2_urban_share_iiasa"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_sb ~ l2_ged_dummy_sb + l3_ged_dummy_sb + l4_ged_dummy_sb + l5_ged_dummy_sb + l6_ged_dummy_sb + l7_ged_dummy_sb + l8_ged_dummy_sb + l9_ged_dummy_sb + l10_ged_dummy_sb + l11_ged_dummy_sb + l12_ged_dummy_sb + mean_ged_dummy_sb + ln_fvp_population200 + ssp2_edu_sec_15_24_prop + ssp2_urban_share_iiasa",
+    "transforms": [
+        {
+            "name": "l5_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 5,
+            "type": "ts"
+        },
+        {
+            "name": "l10_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 10,
+            "type": "ts"
+        },
+        {
+            "name": "l9_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 9,
+            "type": "ts"
+        },
+        {
+            "name": "l7_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 7,
+            "type": "ts"
+        },
+        {
+            "name": "ln_fvp_population200",
+            "f": "log_natural",
+            "var": "fvp_population200",
+            "type": "transform"
+        },
+        {
+            "name": "l4_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 4,
+            "type": "ts"
+        },
+        {
+            "name": "l2_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 2,
+            "type": "ts"
+        },
+        {
+            "name": "l8_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 8,
+            "type": "ts"
+        },
+        {
+            "name": "l3_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 3,
+            "type": "ts"
+        },
+        {
+            "name": "l11_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 11,
+            "type": "ts"
+        },
+        {
+            "name": "l12_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 12,
+            "type": "ts"
+        },
+        {
+            "name": "l6_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 6,
+            "type": "ts"
+        },
+        {
+            "name": "mean_ged_dummy_sb",
+            "f": "mean",
+            "var": "ged_dummy_sb",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "country_id",
+    "timevar": "month_id",
+    "outcome_extension": "sb",
+    "train_start": 121,
+    "train_end": 420,
+    "sim_start": 421,
+    "sim_end": 456,
+    "runtype": "eval",
+    "period": "test"
+}

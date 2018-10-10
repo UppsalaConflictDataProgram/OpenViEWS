@@ -1,0 +1,81 @@
+{
+    "name": "pgm_acled_meansocnat_eval_calib_sb",
+    "name_base": "pgm_acled_meansocnat",
+    "loa": "pgm",
+    "lhs": "ged_dummy_sb",
+    "rhs": [
+        "mean_ged_dummy_sb",
+        "ln_bdist3",
+        "ln_ttime",
+        "ln_capdist",
+        "ln_pop",
+        "gcp_li_mer",
+        "imr_mean",
+        "excluded_dummy_li",
+        "ln_dist_diamsec",
+        "ln_dist_petroleum",
+        "agri_ih_li",
+        "barren_ih_li",
+        "forest_ih_li",
+        "mountains_mean",
+        "savanna_ih_li",
+        "shrub_ih_li",
+        "pasture_ih_li",
+        "urban_ih_li"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_sb ~ mean_ged_dummy_sb + ln_bdist3 + ln_ttime + ln_capdist + ln_pop + gcp_li_mer + imr_mean + excluded_dummy_li + ln_dist_diamsec + ln_dist_petroleum + agri_ih_li + barren_ih_li + forest_ih_li + mountains_mean + savanna_ih_li + shrub_ih_li + pasture_ih_li + urban_ih_li",
+    "transforms": [
+        {
+            "name": "ln_dist_diamsec",
+            "f": "log_natural",
+            "var": "dist_diamsec_s_wgs",
+            "type": "transform"
+        },
+        {
+            "name": "ln_bdist3",
+            "f": "log_natural",
+            "var": "bdist3",
+            "type": "transform"
+        },
+        {
+            "name": "ln_ttime",
+            "f": "log_natural",
+            "var": "ttime_mean",
+            "type": "transform"
+        },
+        {
+            "name": "ln_pop",
+            "f": "log_natural",
+            "var": "pop_li_gpw_sum",
+            "type": "transform"
+        },
+        {
+            "name": "ln_dist_petroleum",
+            "f": "log_natural",
+            "var": "dist_petroleum_s_wgs",
+            "type": "transform"
+        },
+        {
+            "name": "mean_ged_dummy_sb",
+            "f": "mean",
+            "var": "ged_dummy_sb",
+            "type": "transform"
+        },
+        {
+            "name": "ln_capdist",
+            "f": "log_natural",
+            "var": "capdist_li",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "sb",
+    "train_start": 205,
+    "train_end": 384,
+    "sim_start": 385,
+    "sim_end": 420,
+    "runtype": "eval",
+    "period": "calib"
+}

@@ -1,0 +1,24 @@
+{
+    "name": "cm_canon_eco_fcast_test_sb",
+    "name_base": "cm_canon_eco",
+    "loa": "cm",
+    "lhs": "ged_dummy_sb",
+    "rhs": [
+        "fvp_lngdpcap_nonoilrent",
+        "fvp_lngdpcap_oilrent",
+        "fvp_grgdpcap_oilrent",
+        "fvp_grgdpcap_nonoilrent"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_sb ~ fvp_lngdpcap_nonoilrent + fvp_lngdpcap_oilrent + fvp_grgdpcap_oilrent + fvp_grgdpcap_nonoilrent",
+    "transforms": [],
+    "groupvar": "country_id",
+    "timevar": "month_id",
+    "outcome_extension": "sb",
+    "train_start": 121,
+    "train_end": 464,
+    "sim_start": 465,
+    "sim_end": 502,
+    "runtype": "fcast",
+    "period": "test"
+}

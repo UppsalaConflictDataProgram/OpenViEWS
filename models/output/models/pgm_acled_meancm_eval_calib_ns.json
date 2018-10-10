@@ -1,0 +1,65 @@
+{
+    "name": "pgm_acled_meancm_eval_calib_ns",
+    "name_base": "pgm_acled_meancm",
+    "loa": "pgm",
+    "lhs": "ged_dummy_ns",
+    "rhs": [
+        "mean_ged_dummy_ns",
+        "fvp_lngdpcap_nonoilrent",
+        "fvp_lngdpcap_oilrent",
+        "fvp_grgdpcap_oilrent",
+        "fvp_grgdpcap_nonoilrent",
+        "ln_fvp_timeindep",
+        "ln_fvp_timesincepreindepwar",
+        "ln_fvp_timesinceregimechange",
+        "fvp_demo",
+        "fvp_semi",
+        "fvp_prop_excluded",
+        "ln_fvp_population200",
+        "ssp2_edu_sec_15_24_prop",
+        "ssp2_urban_share_iiasa"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_ns ~ mean_ged_dummy_ns + fvp_lngdpcap_nonoilrent + fvp_lngdpcap_oilrent + fvp_grgdpcap_oilrent + fvp_grgdpcap_nonoilrent + ln_fvp_timeindep + ln_fvp_timesincepreindepwar + ln_fvp_timesinceregimechange + fvp_demo + fvp_semi + fvp_prop_excluded + ln_fvp_population200 + ssp2_edu_sec_15_24_prop + ssp2_urban_share_iiasa",
+    "transforms": [
+        {
+            "name": "ln_fvp_timesincepreindepwar",
+            "f": "log_natural",
+            "var": "fvp_timesincepreindepwar",
+            "type": "transform"
+        },
+        {
+            "name": "ln_fvp_population200",
+            "f": "log_natural",
+            "var": "fvp_population200",
+            "type": "transform"
+        },
+        {
+            "name": "mean_ged_dummy_ns",
+            "f": "mean",
+            "var": "ged_dummy_ns",
+            "type": "transform"
+        },
+        {
+            "name": "ln_fvp_timesinceregimechange",
+            "f": "log_natural",
+            "var": "fvp_timesinceregimechange",
+            "type": "transform"
+        },
+        {
+            "name": "ln_fvp_timeindep",
+            "f": "log_natural",
+            "var": "fvp_timeindep",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "ns",
+    "train_start": 205,
+    "train_end": 384,
+    "sim_start": 385,
+    "sim_end": 420,
+    "runtype": "eval",
+    "period": "calib"
+}

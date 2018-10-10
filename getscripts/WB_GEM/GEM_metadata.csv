@@ -1,0 +1,168 @@
+Code,Indicator Name,Long definition,Source
+IBEVERAGES,"Agr: Beverages, 2000=100, current$","Beverages index includes cocoa, coffee and tea.",World Bank.
+KIBEVERAGES,"Agr: Beverages, 2000=100, constant 2000$",,World Bank.
+IFOOD,"Agr: Food, 2000=100, current$","Food index includes fats and oils, grains and other food items.",World Bank.
+KIFOOD,"Agr: Food, 2000=100, constant 2000$",,World Bank.
+IFATS_OILS,"Agr: Food: Fats and oils, 2000=100, current$","Fats and oils index includes coconut oil, groundnut oil, palm oil, soybeans, soybean oil and soybean meal.",World Bank.
+KIFATS_OILS,"Agr: Food: Fats and oils, 2000=100, constant 2000$",,World Bank.
+IGRAINS,"Agr: Food: Grains, 2000=100, current$","Grains index includes barley, maize, rice and wheat.",World Bank.
+KIGRAINS,"Agr: Food: Grains, 2000=100, constant 2000$",,World Bank.
+IOTHERFOOD,"Agr: Food: Other food, 2000=100, current$","Other food index includes bananas, beef, chicken meat, oranges and sugar.",World Bank.
+KIOTHERFOOD,"Agr: Food: Other food, 2000=100, constant 2000$",,World Bank.
+IRAW_MATERIAL,"Agr: Raw materials, 2000=100, current$",Agricultural raw materials index includes timber and other raw materials.,World Bank.
+KIRAW_MATERIAL,"Agr: Raw materials, 2000=100, constant 2000$",,World Bank.
+ITIMBER,"Agr: Raw:1 Timber, 2000=100, current$",Timber index includes tropical hard logs and sawnwood.,World Bank.
+KITIMBER,"Agr: Raw:1 Timber, 2000=100, constant 2000$",,World Bank.
+IOTHERRAWMAT,"Agr: Raw:2 Oth raw materials, 2000=100, current$","Other raw materials index includes cotton, natural rubber and tobacco.",World Bank.
+KIOTHERRAWMAT,"Agr: Raw:2 Other raw materials, 2000=100, constant 2000$",,World Bank.
+IAGRICULTURE,"Agriculture, 2000=100, current$","Agriculture index includes beverages, food and agricultural raw materials.",World Bank.
+KIAGRICULTURE,"Agriculture, 2000=100, constant 2000$",,World Bank.
+ALUMINUM,"Aluminum, $/mt, current","Aluminum (LME) London Metal Exchange, unalloyed primary ingots, high grade, minimum 99.7% purity, settlement price beginning 2005; previously cash price","Platts Metals Week, Thomson Reuters Datastream; World Bank."
+KALUMINUM,"Aluminum, $/mt, constant 2000$",,World Bank.
+BANANA_EU,"Bananas, EU, $/mt, current","Bananas (Central & South America), major brands, c.i.f. Hamburg",Sopisco News; Union of Banana-Exporting Countries (UPEB); Food and Agricultural Organization; US Bureau of Labor Statistics; World Bank.
+KBANANA_EU,"Bananas, EU, $/mt, constant 2000$",,World Bank.
+BANANA_US,"Bananas, US, $/mt, current","Bananas (Central & South America), major brands, US import price, free on truck (f.o.t.) US Gulf ports",Sopisco News; Union of Banana-Exporting Countries (UPEB); Food and Agricultural Organization; US Bureau of Labor Statistics; World Bank.
+KBANANA_US,"Bananas, US, $/mt, constant 2000$",,World Bank.
+BARLEY,"Barley, $/mt, current","Barley (Canada), feed, Western No. 1, Winnipeg Commodity Exchange, spot, wholesale farmers' price",Bloomberg; World Bank.
+KBARLEY,"Barley, $/mt, constant 2000$",,World Bank.
+IMETMIN_DV100,"Base Metals, 2000=100, current$","Base Metals index includes aluminum, copper, lead, nickle, tin and zinc, excludes iron ore.",World Bank.
+KIMETMIN_DV100,"Base Metals, 2000=100, constant 2000$",,World Bank.
+COAL_AUS,"Coal, Australia, $/mt, current","Coal (Australia), thermal, f.o.b. piers, Newcastle/Port Kembla, 6,300 kcal/kg (11,340 btu/lb), less than 0.8%, sulfur 13% ash beginning January 2002; previously 6,667 kcal/kg (12,000 btu/lb), less than 1.0% sulfur, 14%  ash",Coal Week International; Coal Week; World Bank.
+KCOAL_AUS,"Coal, Australia, $/mt, constant 2000$",,World Bank.
+COCOA,"Cocoa, cents/kg, current","Cocoa (ICCO), International Cocoa Organization daily price, average of  the first three positions on the terminal markets of New York and London, nearest three future trading months.",International Cocoa Organization Secretariat; World Bank.
+KCOCOA,"Cocoa, cents/kg, constant 2000$",,World Bank.
+COCONUT_OIL,"Coconut oil, $/mt, current","Coconut oil (Philippines/Indonesia), bulk, c.i.f. Rotterdam","ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+KCOCONUT_OIL,"Coconut oil, $/mt, constant 2000$",,World Bank.
+COFFEE_ARABIC,"Coffee, Arabica, cents/kg, current","Coffee (ICO), International Coffee Organization indicator price, other mild Arabicas, average New York and Bremen/Hamburg markets, ex-dock",International Coffee Organization; Thomson Reuters Datastream; Complete Coffee Coverage; World Bank.
+KCOFFEE_ARABIC,"Coffee, Arabica, cents/kg, constant 2000$",,World Bank.
+COFFEE_ROBUS,"Coffee, Robusta, cents/kg, current","Coffee (ICO), International Coffee Organization indicator price, Robustas, average New York and Le Havre/Marseilles markets, ex-dock",International Coffee Organization; Thomson Reuters Datastream; World Bank.
+KCOFFEE_ROBUS,"Coffee, Robusta, cents/kg, constant 2000$",,World Bank.
+COPPER,"Copper, $/mt, current","Copper (LME), grade A, minimum 99.9935% purity, cathodes and wire bar shapes, settlement price","Platts Metals Week, Engineering and Mining Journal; Thomson Reuters Datastream; World Bank."
+KCOPPER,"Copper, $/mt, constant 2000$",,World Bank.
+COPRA,"Copra, $/mt, current","Copra (Philippines/Indonesia), bulk, c.i.f. N.W. Europe","ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+KCOPRA,"Copra, $/mt, constant 2000$",,World Bank.
+COTTON_A_INDX,"Cotton, A Index, cents/kg, current","Cotton (Cotton Outlook ""CotlookA index""), middling 1-3/32 inch, traded in Far East, C/F beginning 2006; previously Northern Europe, c.i.f.",Cotton Outlook; International Cotton Advisory Committee; Liverpool Cotton Services Ltd.; World Bank.
+KCOTTON_A_INDX,"Cotton, A Index, cents/kg, constant 2000$",,World Bank.
+CRUDE_PETRO,"Crude oil, avg, spot, $/bbl, current","Crude oil, average spot price of Brent, Dubai and West Texas  Intermediate, equally weighed",World Bank.
+KCRUDE_PETRO,"Crude oil, avg, spot, $/bbl, constant 2000$",,World Bank.
+CRUDE_BRENT,"Crude oil, Brendt, $/bbl, current","Crude oil, U.K. Brent 38` API, f.o.b. U.K ports, spot price",Bloomberg; World Bank.
+KCRUDE_BRENT,"Crude oil, Brendt, $/bbl, constant 2000$",,World Bank.
+CRUDE_DUBAI,"Crude oil, Dubai, $/bbl, current","Crude oil, Dubai Fateh 32` API, f.o.b. Dubai, spot price",Bloomberg; World Bank.
+KCRUDE_DUBAI,"Crude oil, Dubai, $/bbl, constant 2000$",,World Bank.
+CRUDE_WTI,"Crude oil, WTI, $/bbl, current","Crude oil, West Texas Intermediate (WTI) 40` API, f.o.b. Midland Texas, spot price",Bloomberg; World Bank.
+KCRUDE_WTI,"Crude oil, WTI, $/bbl, constant 2000$",,World Bank.
+DAP,"DAP, $/mt, current","DAP (diammonium phosphate), standard size, bulk, spot, f.o.b. US Gulf",Fertilizer Week; Fertilizer International; World Bank.
+KDAP,"DAP, $/mt, constant 2000$",,World Bank.
+IENERGY,"Energy, 2000=100, current$","Energy index, a Laspeyres Index with fixed weights based on 2002-2004 average developing countries export values, for coal, crude oil and natural gas.",World Bank.
+KIENERGY,"Energy, 2000=100, constant 2000$",,World Bank.
+IFERTILIZERS,"Fertilizers, 2000=100, current$","Fertilizers index includes natural phosphate rock, phosphate, potassium and nitrogenous products.",World Bank.
+KIFERTILIZERS,"Fertilizers, 2000=100, constant 2000$",,World Bank.
+FISH_MEAL,"Fishmeal, $/mt, current","Fishmeal (any origin), 64-65%,  c&f Bremen, estimates based on wholesale price, beginning 2004; previously c&f Hamburg","ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+KFISH_MEAL,"Fishmeal, $/mt, constant 2000$",,World Bank.
+GOLD,"Gold, $/toz, current","Gold (UK), 99.5% fine, London afternoon fixing, average of daily rates","Platts Metals Week; International Monetary Fund, International Financial Statistics; Shearson Lehman Brothers, Metal Market Weekly Review; Thomson Reuters Datastream; World Bank."
+KGOLD,"Gold, $/toz, constant 2000$",,World Bank.
+GRNUT_OIL,"Groundnut oil, $/mt, current","Groundnut oil (any origin), c.i.f. Rotterdam","ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+KGRNUT_OIL,"Groundnut oil, $/mt, constant 2000$",,World Bank.
+IRON_ORE,"Iron ore, cents/dmtu, current$","Iron ore (Brazil), VALE (formerly CVRD) Carajas sinter feed, contract price, f.o.b. Ponta da Madeira.  Unit dry metric ton unit (dmtu) stands for mt 1% Fe-unit.  Prior to year 2010 annual contract prices.",Vale; CVRD; UNCTAD; World Bank.
+KIRON_ORE,"Iron ore, c/dmtu, constant 2000$",,World Bank.
+LEAD,"Lead, cents/kg, current","Lead (LME), refined, 99.97% purity, settlement price","Platts Metals Week, Engineering and Mining Journal; Thomson Reuters Datastream; World Bank."
+KLEAD,"Lead, cents/kg, constant 2000$",,World Bank.
+LOGS_CMR,"Logs, Cameroon, $/cum, current","Logs (West Africa), sapele, high quality (loyal and marchand), 80 centimeter or more, f.o.b. Douala, Cameroon beginning January 1996; previously of unspecified dimension",International Tropical Timber Organization; Marches Tropicaux et Mediterraneens; World Bank.
+KLOGS_CMR,"Logs, Cameroon, $/cum, constant 2000$",,World Bank.
+LOGS_MYS,"Logs, Malaysia, $/cum, current","Logs (Malaysia), meranti, Sarawak, sale price charged by importers, Tokyo beginning February 1993; previously average of Sabah and Sarawak weighted by Japanese import volumes",International Tropical Timber Organization; Mokuzai Shikyo Geppo; World Bank.
+KLOGS_MYS,"Logs, Malaysia, $/cum, constant 2000$",,World Bank.
+MAIZE,"Maize, $/mt, current","Maize (US), no. 2, yellow, f.o.b. US Gulf ports",US Department of Agriculture; World Bank.
+KMAIZE,"Maize, $/mt, constant 2000$",,World Bank.
+BEEF,"Meat, beef, cents/kg, current","Meat, beef (Australia/New Zealand), chucks and cow forequarters, frozen boneless, 85% chemical lean, c.i.f. U.S. port (East Coast), ex-dock, beginning November 2002; previously cow forequarters","Meat & Livestock Australia, Meat and Livestock Weekly; The National Provisioner; US Department of Agriculture;  World Bank."
+KBEEF,"Meat, beef, cents/kg, constant 2000$",,World Bank.
+CHICKEN,"Meat, chicken, cents/kg, current","Meat, sheep (New Zealand), frozen whole carcasses Prime Medium (PM) wholesale, Smithfield, London  beginning January 2006; previously Prime Light (PL)",US Department of Agriculture; Bloomberg; World Bank.
+KCHICKEN,"Meat, chicken, cents/kg, constant 2000$",,World Bank.
+LAMB,"Meat, sheep, cents/kg, current","Meat, chicken (US), broiler/fryer, whole birds, 2-1/2 to 3 pounds, USDA grade ""A"", ice-packed, Georgia Dock preliminary weighted average, wholesale",Meat Trade Journal; World Bank.
+KLAMB,"Meat, sheep, cents/kg, constant 2000$",,World Bank.
+IMETMIN,"Metals and minerals, 2000=100, current$","Metals and minerals index includes aluminum, copper, iron ore, lead, nickle, tin and zinc.",World Bank.
+KIMETMIN,"Metals and minerals, 2000=100, constant 2000$",,World Bank.
+NGAS_JP,"Natural gas LNG, $/mmbtu, current","Natural gas LNG (Japan), import price, cif, recent two months' averages are estimates.",World Gas Intelligence; World Bank.
+KNGAS_JP,"Natural gas LNG, $/mmbtu, constant 2000$",,World Bank.
+NGAS_EUR,"Natural gas, Europe, $/mmbtu, current","Natural Gas (Europe), average import border price, including UK.  As of April 2010 includes a spot price component.  Between June 2000 - March 2010 excludes UK",World Gas Intelligence; World Bank.
+KNGAS_EUR,"Natural gas, Europe, $/mmbtu, constant 2000$",,World Bank.
+NGAS_US,"Natural gas, US, $/mmbtu, current","Natural Gas (U.S.), spot price at Henry Hub, Louisiana",Thomson Reuters Datastream; The Wall Street Journal; World Bank.
+KNGAS_US,"Natural gas, US, $/mmbtu, constant 2000$",,World Bank.
+NICKEL,"Nickel, $/mt, current","Nickel (LME), cathodes, minimum 99.8% purity, settlement price beginning 2005; previously cash price","Platts Metals Week, Thomson Reuters Datastream; World Bank."
+KNICKEL,"Nickel, $/mt, constant 2000$",,World Bank.
+INONFUEL,"Non-energy commodities, 2000=100, current$","Non-energy index, a Laspeyres Index with fixed weights based on 2002-2004 average developing countries export values, for 34 commodities contain in the agriculture, fertilizer, and metals and minerals indices.",World Bank.
+KINONFUEL,"Non-energy commodities, 2000=100, constant 2000$",,World Bank.
+ORANGE,"Oranges, $/mt, current","Oranges (Mediterranean exporters) navel, EEC indicative import price, c.i.f. Paris","INTERFEL, Fel Actualite hebdo; FRuiTrop; Marche Europeens Des Fruits et Legumes; World Bank."
+KORANGE,"Oranges, $/mt, constant 2000$",,World Bank.
+PALM_OIL,"Palm oil, $/mt, current","Palm oil (Malaysia), 5% bulk, c.i.f. N. W. Europe","ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+KPALM_OIL,"Palm oil, $/mt, constant 2000$",,World Bank.
+PLMKRNL_OIL,"Palmkernal oil, $/mt, current","Palmkernel Oil (Malaysia), c.I.f. Rotterdam","ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+KPLMKRNL_OIL,"Palmkernal oil, $/mt, constant 2000$",,World Bank.
+PHOSROCK,"Phosphate rock, $/mt, current","Phosphate rock (Morocco), 70% BPL, contract, f.a.s. Casablanca",Fertilizer Week; Fertilizer International; World Bank.
+KPHOSROCK,"Phosphate rock, $/mt, constant 2000$",,World Bank.
+PLYWOOD,"Plywood, cents/sheets, current","Plywood (Africa and Southeast Asia), Lauan, 3-ply, extra, 91 cm x 182 cm x 4 mm,  wholesale price, spot Tokyo",Japan Lumber Journal; International Tropical Timber Organization; Nikkei Newsletter on Commodities; World Bank.
+KPLYWOOD,"Plywood, cents/sheets, constant 2000$",,World Bank.
+POTASH,"Potassium Chloride, $/mt, current","Potassium chloride (muriate of potash), standard grade, spot, f.o.b.  Vancouver",Fertilizer Week; Fertilizer International; World Bank.
+KPOTASH,"Potassium Chloride, $/mt, constant 2000$",,World Bank.
+RICE_A1,"Rice, Thai, A1.Special, $/mt, current","Rice (Thailand), 100% broken, A.1 Super from 2006 onwards, government standard, f.o.b. Bangkok; prior to 2006, A1 Special, a slightly lower grade than A1 Super.",US Department of Agricuture; World Bank.
+RICE_25,"Rice, Thailand, 25%, $/mt, current","Rice (Thailand), 25% broken, WR, milled indicative survey price, government standard, f.o.b. Bangkok",US Department of Agricuture; World Bank.
+KRICE_25,"Rice, Thailand, 25%, $/mt, constant 2000$",,World Bank.
+RICE_05,"Rice, Thailand, 5%, $/mt, current","Rice (Thailand), 5% broken, white rice (WR), milled, indicative price based on  weekly surveys of export transactions, government standard, f.o.b. Bangkok",US Department of Agricuture; World Bank.
+KRICE_05,"Rice, Thailand, 5%, $/mt, constant 2000$",,World Bank.
+KRICE_A1,"Rice, Thai, A1.Special, $/mt, constant 2000$",,World Bank.
+RUBBER1_MYSG,"Rubber, Singapore, cents/kg, current","Rubber (Asia), RSS3 grade, Singapore Commodity Exchange Ltd (SICOM) nearby contract beginning 2004; during 2000 to 2003, Singapore RSS1; previously Malaysia RSS1",Singapore Commodity Exchange Ltd (SICOM); Bloomberg; Rubber Association of Singapore Commodity Exchange (RASCE); International Rubber Study Group; Asian Wall Street Journal; World Bank.
+KRUBBER1_MYSG,"Rubber, Singapore, cents/kg, constant 2000$",,World Bank.
+SAWNWD_CMR,"Sawnwood, Cameroon, $/cum, current","Sawnwood (Cameroon), sapele, width 6 inches or more, length 6 feet or more, f.a.s. Cameroonian ports",International Tropical Timber Organization; Marches Tropicaux et Mediterraneens; World Bank.
+KSAWNWD_CMR,"Sawnwood, Cameroon, $/cum, constant 2000$",,World Bank.
+SAWNWD_MYS,"Sawnwood, Malaysia, $/cum, current","Sawnwood (Malaysia), dark red seraya/meranti, select and better quality, average 7 to 8 inches; length average 12 to 14 inches; thickness 1 to 2 inch(es);  kiln dry, c. & f. UK ports, with 5% agents commission including premium for products of certified sustainable forest beginning January 2005; previously excluding the premium",International Tropical Timber Market Report; Tropical Timbers; World Bank.
+KSAWNWD_MYS,"Sawnwood, Malaysia, $/cum, constant 2000$",,World Bank.
+SHRIMP_MEX,"Shrimp, Mexico, cents/kg, current","Shrimp , (Mexico), west coast, frozen, white, No. 1,  shell-on, headless, 26 to 30 count per pound, wholesale price at New York","US Department of Commerce, NOAA, Fishery Market News; World Bank."
+KSHRIMP_MEX,"Shrimp, Mexico, cents/kg, constant 2000$",,World Bank.
+SILVER,"Silver, cents/toz, current","Silver (Handy & Harman), 99.9% grade refined, New York","Platts Metasl Week; Australian Minerals Economics Pty, Ltd., Silver World Supply & Demand, Thomson Reuters Datastream; World Bank."
+KSILVER,"Silver, cents/toz, constant 2000$",,World Bank.
+SORGHUM,"Sorghum, $/mt, current","Sorghum (US), no. 2 milo yellow, f.o.b. Gulf ports",US Department of Agriculture; World Bank.
+KSORGHUM,"Sorghum, $/mt, constant 2000$",,World Bank.
+SOYBEAN_MEAL,"Soybean meal, $/mt, current","Soybean meal (any origin), Argentine 45/46% extraction, c.i.f. Rotterdam beginning 1990; previously US 44%","ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+KSOYBEAN_MEAL,"Soybean meal, $/mt, constant 2000$",,World Bank.
+SOYBEAN_OIL,"Soybean oil, $/mt, current","Soybean oil (Any origin), crude, f.o.b. ex-mill Netherlands","ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+KSOYBEAN_OIL,"Soybean oil, $/mt, constant 2000$",,World Bank.
+SOYBEANS,"Soybeans, $/mt, current","Soybeans (US), c.i.f. Rotterdam","ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+KSOYBEANS,"Soybeans, $/mt, constant 2000$",,World Bank.
+STL_JP_CROLL,"Steel cr coilsheet, $/mt, current",Cold-rolled coil/sheet (Japan) producers' export contracts (3 to 12 months terms) fob mainly to Asia,"Japan Metal Bulletin, World Bank."
+KSTL_JP_CROLL,"Steel cr coilsheet, $/mt, constant 2000$",,World Bank.
+STL_JP_HROLL,"Steel hr coilsheet, $/mt, current",Hot-rolled coil/sheet (Japan) producers' export contracts (3 to 12 months terms) fob mainly to Asia,"Japan Metal Bulletin, World Bank."
+KSTL_JP_HROLL,"Steel hr coilsheet, $/mt, constant 2000$",,World Bank.
+STL_JP_WIROD,"Steel wire rod, $/mt, current",Wire ord (Japan) producers' export contracts (3 to 12 months terms) fob mainly to Asia,"Japan Metal Bulletin, World Bank."
+KSTL_JP_WIROD,"Steel wire rod, $/mt, constant 2000$",,World Bank.
+STL_JP_REBAR,"Steel, rebar, $/mt, current",Rebar (concrete Reinforcing bars) (Japan) producers' export contracts (3 to 12 months terms) fob mainly to Asia,"Japan Metal Bulletin, World Bank."
+KSTL_JP_REBAR,"Steel, rebar, $/mt, constant 2000$",,World Bank.
+SUGAR_EU,"Sugar, EU, cents/kg, current","Sugar (EU), European Union negotiated import price for raw unpackaged sugar from African, Caribbean and Pacific (ACP) under Lome Conventions, c.I.f. European ports",International Monetary Fund; World Bank.
+KSUGAR_EU,"Sugar, EU, cents/kg, constant 2000$",,World Bank.
+SUGAR_US,"Sugar, US, cents/kg, current","Sugar (US), nearby futures contract, c.i.f. ","Bloomberg, World Bank."
+KSUGAR_US,"Sugar, US, cents/kg, constant 2000$",,World Bank.
+SUGAR_WLD,"Sugar, world, cents/kg, current","Sugar (world), International Sugar Agreement (ISA) daily price, raw,  f.o.b. and stowed at greater Caribbean ports",International Sugar Organization; Thomson Reuters Datastream; World Bank.
+KSUGAR_WLD,"Sugar, world, cents/kg, constant 2000$",,World Bank.
+TEA_AVG,"Tea, acutions (3) average, cents/kg, current","Tea , average three auctions, arithmetic average of quotations at Kolkata, Colombo and Mombasa/Nairobi.",World Bank.
+KTEA_AVG,"Tea, auctions (3) average, cents/kg, constant 2000$",,World Bank.
+TEA_COLOMBO,"Tea, Colombo auctions, cents/kg, current","Tea (Colombo auctions), Sri Lankan origin, all tea, arithmetic average of weekly quotes.",International Tea Committee; Sri Lanka Tea Board; Tea Broker's Association of London; World Bank.
+KTEA_COLOMBO,"Tea, Colombo auctions, cents/kg, constant 2000$",,World Bank.
+TEA_KOLKATA,"Tea, Kokata auctions, cents/kg, current","Tea (Kolkata auctions), leaf, include excise duty, arithmetic average of weekly quotes.",International Tea Committee; Tea Board of India; Tea Broker's Association of London; World Bank.
+KTEA_KOLKATA,"Tea, Kokata auctions, cents/kg, constant 2000$",,World Bank.
+TEA_MOMBASA,"Tea, Mombasa auctions, cents/kg, current","Tea (Mombasa/Nairobi auctions), African origin, all tea, arithmetic average of weekly quotes.",International Tea Committee; African Tea Brokers Ltd.; Tea Broker's Association of London; World Bank.
+KTEA_MOMBASA,"Tea, Mombasa auctions, cents/kg, constant 2000$",,World Bank.
+TIN,"Tin, cents/kg, current","Tin (LME), refined, 99.85% purity, settlement price","Platts Metals Week, Engineering and Mining Journal; Thomson Reuters Datastream; World Bank."
+KTIN,"Tin, cents/kg, constant 2000$",,World Bank.
+TOBAC_US,"Tobacco, $/mt, current","Tobacco (any origin), unmanufactured, general import , cif, US","US Department of Agriculture, World Bank."
+KTOBAC_US,"Tobacco, $/mt, constant 2000$",,World Bank.
+TSP,"TSP, $/mt, current","TSP (triple superphosphate), up to September 2006 bulk, spot, f.o.b. US Gulf; from October 2006 onwards Tunisian, granular, f.o.b.",Fertilizer Week; Fertilizer International; World Bank.
+KTSP,"TSP, $/mt, constant 2000$",,World Bank.
+UREA_EE_BULK,"Urea, E. Europe, bulk, $/mt, current","Urea, (Black Sea), bulk, spot,  f.o.b. Black Sea (primarily Yuzhnyy) beginning July 1991; for 1985-91 (June) f.o.b. Eastern Europe",Fertilizer Week; Fertilizer International; World Bank.
+WHEAT_CANADI,"Wheat, Canada, $/mt, current","Wheat (Canada), no. 1, Western Red Spring (CWRS), in store, St. Lawrence, export price",Canadian Grain Commission; Thomson Reuters Datastream; World Bank.
+KWHEAT_CANADI,"Wheat, Canada, $/mtv",,World Bank.
+WHEAT_US_HRW,"Wheat, US, HRW, $/mt, current","Wheat (US), no. 1, hard red winter, ordinary protein, export price delivered at the US Gulf port for prompt or 30 days shipment",Bloomberg; US Department of Agriculture; World Bank.
+KWHEAT_US_HRW,"Wheat, US, HRW, $/mt, constant 2000$",,World Bank.
+WHEAT_US_SRW,"Wheat, US, SRW, $/mt, current","Wheat (US), no. 2, soft red winter, export price delivered at the US Gulf port for prompt or 30 days shipment",US Department of Agriculture; World Bank.
+KWHEAT_US_SRW,"Wheat, US, SRW, $/mt, constant 2000$",,World Bank.
+WOODPULP,"Woodpulp, $/mt, current","Woodpulp (Sweden), softwood, sulphate, bleached, air-dry weight, c.i.f.  North Sea ports","Statistisches Bundesamt, Germany; Allman Manadsstatistik, Sweden; World Bank."
+KWOODPULP,"Woodpulp, $/mt, constant 2000$",,World Bank.
+ZINC,"Zinc, cents/kg, current","Zinc (LME), high grade, minimum 99.95% purity, settlement price beginning April 1990; previously special high grade, minimum 99.995%, cash prices ","Platts Metals Week, Engineering and Mining Journal; Thomson Reuters Datastream; World Bank."
+KZINC,"Zinc, cents/kg, constant 2000$",,World Bank.

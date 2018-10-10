@@ -1,0 +1,7 @@
+create or replace function country_id_to_gwcode(integer) returns integer
+LANGUAGE SQL
+AS $$
+SELECT gwcode::int FROM staging.country WHERE id::int=$1
+$$
+IMMUTABLE
+RETURNS NULL ON NULL INPUT ;

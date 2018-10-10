@@ -1,0 +1,20 @@
+name: dynasim
+channels:
+  - defaults
+  - anaconda
+dependencies:
+ - python=3.6
+ - numpy
+ - pandas
+ - pytables
+ - ipython
+ - numba
+ - scipy
+ - fiona
+ - patsy
+ - statsmodels
+ - h5py
+ - krb5
+ - pytables
+ - mpi4py
+ - pysal=<1.14.4

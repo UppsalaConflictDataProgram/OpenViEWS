@@ -1,0 +1,1 @@
+ffmpeg -y -r 6 -pattern_type glob -i '*.png' test.mp4

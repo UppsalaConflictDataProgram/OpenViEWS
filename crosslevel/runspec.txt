@@ -1,0 +1,14 @@
+run
+    table_h
+    table_l
+    timevar
+    groupvar_h
+    groupvar_l
+
+    jobs
+        col_h
+        col_l
+        name
+        method
+    local_settings
+        connectstring

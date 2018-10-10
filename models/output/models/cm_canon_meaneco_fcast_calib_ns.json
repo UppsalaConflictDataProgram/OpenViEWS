@@ -1,0 +1,32 @@
+{
+    "name": "cm_canon_meaneco_fcast_calib_ns",
+    "name_base": "cm_canon_meaneco",
+    "loa": "cm",
+    "lhs": "ged_dummy_ns",
+    "rhs": [
+        "mean_ged_dummy_ns",
+        "fvp_lngdpcap_nonoilrent",
+        "fvp_lngdpcap_oilrent",
+        "fvp_grgdpcap_oilrent",
+        "fvp_grgdpcap_nonoilrent"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_ns ~ mean_ged_dummy_ns + fvp_lngdpcap_nonoilrent + fvp_lngdpcap_oilrent + fvp_grgdpcap_oilrent + fvp_grgdpcap_nonoilrent",
+    "transforms": [
+        {
+            "name": "mean_ged_dummy_ns",
+            "f": "mean",
+            "var": "ged_dummy_ns",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "country_id",
+    "timevar": "month_id",
+    "outcome_extension": "ns",
+    "train_start": 121,
+    "train_end": 428,
+    "sim_start": 429,
+    "sim_end": 464,
+    "runtype": "fcast",
+    "period": "calib"
+}

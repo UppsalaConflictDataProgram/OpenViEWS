@@ -1,0 +1,119 @@
+{
+    "name": "cm_canon_protest_fcast_test_ns",
+    "name_base": "cm_canon_protest",
+    "loa": "cm",
+    "lhs": "ged_dummy_ns",
+    "rhs": [
+        "l2_acled_dummy_pr",
+        "l3_acled_dummy_pr",
+        "l4_acled_dummy_pr",
+        "l5_acled_dummy_pr",
+        "l6_acled_dummy_pr",
+        "l7_acled_dummy_pr",
+        "l8_acled_dummy_pr",
+        "l9_acled_dummy_pr",
+        "l10_acled_dummy_pr",
+        "l11_acled_dummy_pr",
+        "l12_acled_dummy_pr",
+        "l1_acled_dummy_pr",
+        "decay_12_cw_acled_dummy_pr_0"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_ns ~ l2_acled_dummy_pr + l3_acled_dummy_pr + l4_acled_dummy_pr + l5_acled_dummy_pr + l6_acled_dummy_pr + l7_acled_dummy_pr + l8_acled_dummy_pr + l9_acled_dummy_pr + l10_acled_dummy_pr + l11_acled_dummy_pr + l12_acled_dummy_pr + l1_acled_dummy_pr + decay_12_cw_acled_dummy_pr_0",
+    "transforms": [
+        {
+            "name": "l5_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 5,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_acled_dummy_pr_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_acled_dummy_pr_0",
+            "type": "transform"
+        },
+        {
+            "name": "l11_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 11,
+            "type": "ts"
+        },
+        {
+            "name": "l7_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 7,
+            "type": "ts"
+        },
+        {
+            "name": "l3_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 3,
+            "type": "ts"
+        },
+        {
+            "name": "l8_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 8,
+            "type": "ts"
+        },
+        {
+            "name": "l10_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 10,
+            "type": "ts"
+        },
+        {
+            "name": "l1_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "l2_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 2,
+            "type": "ts"
+        },
+        {
+            "name": "l9_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 9,
+            "type": "ts"
+        },
+        {
+            "name": "l6_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 6,
+            "type": "ts"
+        },
+        {
+            "name": "l12_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 12,
+            "type": "ts"
+        },
+        {
+            "name": "l4_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 4,
+            "type": "ts"
+        },
+        {
+            "name": "cw_acled_dummy_pr_0",
+            "var": "acled_dummy_pr",
+            "cw": "==0",
+            "type": "ts"
+        }
+    ],
+    "groupvar": "country_id",
+    "timevar": "month_id",
+    "outcome_extension": "ns",
+    "train_start": 121,
+    "train_end": 464,
+    "sim_start": 465,
+    "sim_end": 502,
+    "runtype": "fcast",
+    "period": "test"
+}

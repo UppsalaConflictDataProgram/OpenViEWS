@@ -1,0 +1,289 @@
+{
+    "name": "pgm_acled_nocm_eval_test_ns",
+    "name_base": "pgm_acled_nocm",
+    "loa": "pgm",
+    "lhs": "ged_dummy_ns",
+    "rhs": [
+        "l2_ged_dummy_ns",
+        "l3_ged_dummy_ns",
+        "l4_ged_dummy_ns",
+        "l5_ged_dummy_ns",
+        "l6_ged_dummy_ns",
+        "l7_ged_dummy_ns",
+        "l8_ged_dummy_ns",
+        "l9_ged_dummy_ns",
+        "l10_ged_dummy_ns",
+        "l11_ged_dummy_ns",
+        "l12_ged_dummy_ns",
+        "q_1_1_l2_ged_dummy_ns",
+        "q_1_1_l3_ged_dummy_ns",
+        "l1_ged_dummy_sb",
+        "l1_ged_dummy_ns",
+        "l1_ged_dummy_os",
+        "l1_acled_dummy_pr",
+        "decay_12_cw_ged_dummy_sb_0",
+        "decay_12_cw_ged_dummy_ns_0",
+        "decay_12_cw_ged_dummy_os_0",
+        "decay_12_cw_acled_dummy_pr_0",
+        "q_1_1_l1_ged_dummy_sb",
+        "q_1_1_l1_ged_dummy_ns",
+        "q_1_1_l1_ged_dummy_os",
+        "q_1_1_l1_acled_dummy_pr",
+        "ln_dist_diamsec",
+        "ln_dist_petroleum",
+        "agri_ih_li",
+        "barren_ih_li",
+        "forest_ih_li",
+        "mountains_mean",
+        "savanna_ih_li",
+        "shrub_ih_li",
+        "pasture_ih_li",
+        "urban_ih_li",
+        "ln_bdist3",
+        "ln_ttime",
+        "ln_capdist",
+        "ln_pop",
+        "gcp_li_mer",
+        "imr_mean",
+        "excluded_dummy_li"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_ns ~ l2_ged_dummy_ns + l3_ged_dummy_ns + l4_ged_dummy_ns + l5_ged_dummy_ns + l6_ged_dummy_ns + l7_ged_dummy_ns + l8_ged_dummy_ns + l9_ged_dummy_ns + l10_ged_dummy_ns + l11_ged_dummy_ns + l12_ged_dummy_ns + q_1_1_l2_ged_dummy_ns + q_1_1_l3_ged_dummy_ns + l1_ged_dummy_sb + l1_ged_dummy_ns + l1_ged_dummy_os + l1_acled_dummy_pr + decay_12_cw_ged_dummy_sb_0 + decay_12_cw_ged_dummy_ns_0 + decay_12_cw_ged_dummy_os_0 + decay_12_cw_acled_dummy_pr_0 + q_1_1_l1_ged_dummy_sb + q_1_1_l1_ged_dummy_ns + q_1_1_l1_ged_dummy_os + q_1_1_l1_acled_dummy_pr + ln_dist_diamsec + ln_dist_petroleum + agri_ih_li + barren_ih_li + forest_ih_li + mountains_mean + savanna_ih_li + shrub_ih_li + pasture_ih_li + urban_ih_li + ln_bdist3 + ln_ttime + ln_capdist + ln_pop + gcp_li_mer + imr_mean + excluded_dummy_li",
+    "transforms": [
+        {
+            "name": "q_1_1_l1_ged_dummy_os",
+            "var": "l1_ged_dummy_os",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "cw_ged_dummy_ns_0",
+            "var": "ged_dummy_ns",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_os_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_os_0",
+            "type": "transform"
+        },
+        {
+            "name": "ln_dist_diamsec",
+            "f": "log_natural",
+            "var": "dist_diamsec_s_wgs",
+            "type": "transform"
+        },
+        {
+            "name": "l3_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 3,
+            "type": "ts"
+        },
+        {
+            "name": "l6_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 6,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l3_ged_dummy_ns",
+            "var": "l3_ged_dummy_ns",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "decay_12_cw_acled_dummy_pr_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_acled_dummy_pr_0",
+            "type": "transform"
+        },
+        {
+            "name": "l11_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 11,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l1_acled_dummy_pr",
+            "var": "l1_acled_dummy_pr",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "cw_ged_dummy_os_0",
+            "var": "ged_dummy_os",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "cw_acled_dummy_pr_0",
+            "var": "acled_dummy_pr",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_sb_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_sb_0",
+            "type": "transform"
+        },
+        {
+            "name": "l4_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 4,
+            "type": "ts"
+        },
+        {
+            "name": "ln_capdist",
+            "f": "log_natural",
+            "var": "capdist_li",
+            "type": "transform"
+        },
+        {
+            "name": "l10_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 10,
+            "type": "ts"
+        },
+        {
+            "name": "ln_bdist3",
+            "f": "log_natural",
+            "var": "bdist3",
+            "type": "transform"
+        },
+        {
+            "name": "l1_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_ns_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_ns_0",
+            "type": "transform"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_sb",
+            "var": "l1_ged_dummy_sb",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "q_1_1_l2_ged_dummy_ns",
+            "var": "l2_ged_dummy_ns",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l5_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 5,
+            "type": "ts"
+        },
+        {
+            "name": "l8_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 8,
+            "type": "ts"
+        },
+        {
+            "name": "ln_dist_petroleum",
+            "f": "log_natural",
+            "var": "dist_petroleum_s_wgs",
+            "type": "transform"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_ns",
+            "var": "l1_ged_dummy_ns",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l7_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 7,
+            "type": "ts"
+        },
+        {
+            "name": "l9_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 9,
+            "type": "ts"
+        },
+        {
+            "name": "l1_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "cw_ged_dummy_sb_0",
+            "var": "ged_dummy_sb",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "l12_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 12,
+            "type": "ts"
+        },
+        {
+            "name": "l1_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "ln_ttime",
+            "f": "log_natural",
+            "var": "ttime_mean",
+            "type": "transform"
+        },
+        {
+            "name": "ln_pop",
+            "f": "log_natural",
+            "var": "pop_li_gpw_sum",
+            "type": "transform"
+        },
+        {
+            "name": "l2_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 2,
+            "type": "ts"
+        },
+        {
+            "name": "l1_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 1,
+            "type": "ts"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "ns",
+    "train_start": 205,
+    "train_end": 420,
+    "sim_start": 421,
+    "sim_end": 456,
+    "runtype": "eval",
+    "period": "test"
+}

@@ -1,0 +1,206 @@
+{
+    "name": "pgm_canon_histonly_fcast_calib_os",
+    "name_base": "pgm_canon_histonly",
+    "loa": "pgm",
+    "lhs": "ged_dummy_os",
+    "rhs": [
+        "l2_ged_dummy_os",
+        "l3_ged_dummy_os",
+        "l4_ged_dummy_os",
+        "l5_ged_dummy_os",
+        "l6_ged_dummy_os",
+        "l7_ged_dummy_os",
+        "l8_ged_dummy_os",
+        "l9_ged_dummy_os",
+        "l10_ged_dummy_os",
+        "l11_ged_dummy_os",
+        "l12_ged_dummy_os",
+        "q_1_1_l2_ged_dummy_os",
+        "q_1_1_l3_ged_dummy_os",
+        "l1_ged_dummy_sb",
+        "l1_ged_dummy_ns",
+        "l1_ged_dummy_os",
+        "decay_12_cw_ged_dummy_sb_0",
+        "decay_12_cw_ged_dummy_ns_0",
+        "decay_12_cw_ged_dummy_os_0",
+        "q_1_1_l1_ged_dummy_sb",
+        "q_1_1_l1_ged_dummy_ns",
+        "q_1_1_l1_ged_dummy_os"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_os ~ l2_ged_dummy_os + l3_ged_dummy_os + l4_ged_dummy_os + l5_ged_dummy_os + l6_ged_dummy_os + l7_ged_dummy_os + l8_ged_dummy_os + l9_ged_dummy_os + l10_ged_dummy_os + l11_ged_dummy_os + l12_ged_dummy_os + q_1_1_l2_ged_dummy_os + q_1_1_l3_ged_dummy_os + l1_ged_dummy_sb + l1_ged_dummy_ns + l1_ged_dummy_os + decay_12_cw_ged_dummy_sb_0 + decay_12_cw_ged_dummy_ns_0 + decay_12_cw_ged_dummy_os_0 + q_1_1_l1_ged_dummy_sb + q_1_1_l1_ged_dummy_ns + q_1_1_l1_ged_dummy_os",
+    "transforms": [
+        {
+            "name": "l12_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 12,
+            "type": "ts"
+        },
+        {
+            "name": "l8_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 8,
+            "type": "ts"
+        },
+        {
+            "name": "l3_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 3,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_os",
+            "var": "l1_ged_dummy_os",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l9_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 9,
+            "type": "ts"
+        },
+        {
+            "name": "l10_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 10,
+            "type": "ts"
+        },
+        {
+            "name": "cw_ged_dummy_ns_0",
+            "var": "ged_dummy_ns",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "l5_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 5,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_os_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_os_0",
+            "type": "transform"
+        },
+        {
+            "name": "l11_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 11,
+            "type": "ts"
+        },
+        {
+            "name": "l6_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 6,
+            "type": "ts"
+        },
+        {
+            "name": "l7_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 7,
+            "type": "ts"
+        },
+        {
+            "name": "cw_ged_dummy_os_0",
+            "var": "ged_dummy_os",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_sb_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_sb_0",
+            "type": "transform"
+        },
+        {
+            "name": "l4_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 4,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_ns_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_ns_0",
+            "type": "transform"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_sb",
+            "var": "l1_ged_dummy_sb",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_ns",
+            "var": "l1_ged_dummy_ns",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l1_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "cw_ged_dummy_sb_0",
+            "var": "ged_dummy_sb",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "l2_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 2,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l3_ged_dummy_os",
+            "var": "l3_ged_dummy_os",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l1_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l2_ged_dummy_os",
+            "var": "l2_ged_dummy_os",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l1_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 1,
+            "type": "ts"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "os",
+    "train_start": 121,
+    "train_end": 428,
+    "sim_start": 429,
+    "sim_end": 464,
+    "runtype": "fcast",
+    "period": "calib"
+}

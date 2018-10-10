@@ -1,0 +1,28 @@
+{
+    "name": "pgm_acled_mean_eval_test_pr",
+    "name_base": "pgm_acled_mean",
+    "loa": "pgm",
+    "lhs": "acled_dummy_pr",
+    "rhs": [
+        "mean_acled_dummy_pr"
+    ],
+    "stage": 1,
+    "formula": "acled_dummy_pr ~ mean_acled_dummy_pr",
+    "transforms": [
+        {
+            "name": "mean_acled_dummy_pr",
+            "f": "mean",
+            "var": "acled_dummy_pr",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "pr",
+    "train_start": 205,
+    "train_end": 420,
+    "sim_start": 421,
+    "sim_end": 456,
+    "runtype": "eval",
+    "period": "test"
+}

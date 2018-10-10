@@ -1,0 +1,52 @@
+{
+    "name": "pgm_acled_soc_eval_calib_ns",
+    "name_base": "pgm_acled_soc",
+    "loa": "pgm",
+    "lhs": "ged_dummy_ns",
+    "rhs": [
+        "ln_bdist3",
+        "ln_ttime",
+        "ln_capdist",
+        "ln_pop",
+        "gcp_li_mer",
+        "imr_mean",
+        "excluded_dummy_li"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_ns ~ ln_bdist3 + ln_ttime + ln_capdist + ln_pop + gcp_li_mer + imr_mean + excluded_dummy_li",
+    "transforms": [
+        {
+            "name": "ln_bdist3",
+            "f": "log_natural",
+            "var": "bdist3",
+            "type": "transform"
+        },
+        {
+            "name": "ln_pop",
+            "f": "log_natural",
+            "var": "pop_li_gpw_sum",
+            "type": "transform"
+        },
+        {
+            "name": "ln_ttime",
+            "f": "log_natural",
+            "var": "ttime_mean",
+            "type": "transform"
+        },
+        {
+            "name": "ln_capdist",
+            "f": "log_natural",
+            "var": "capdist_li",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "ns",
+    "train_start": 205,
+    "train_end": 384,
+    "sim_start": 385,
+    "sim_end": 420,
+    "runtype": "eval",
+    "period": "calib"
+}

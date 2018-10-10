@@ -1,0 +1,50 @@
+{
+    "name": "pgm_acled_meannat_eval_calib_ns",
+    "name_base": "pgm_acled_meannat",
+    "loa": "pgm",
+    "lhs": "ged_dummy_ns",
+    "rhs": [
+        "mean_ged_dummy_ns",
+        "ln_dist_diamsec",
+        "ln_dist_petroleum",
+        "agri_ih_li",
+        "barren_ih_li",
+        "forest_ih_li",
+        "mountains_mean",
+        "savanna_ih_li",
+        "shrub_ih_li",
+        "pasture_ih_li",
+        "urban_ih_li"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_ns ~ mean_ged_dummy_ns + ln_dist_diamsec + ln_dist_petroleum + agri_ih_li + barren_ih_li + forest_ih_li + mountains_mean + savanna_ih_li + shrub_ih_li + pasture_ih_li + urban_ih_li",
+    "transforms": [
+        {
+            "name": "ln_dist_petroleum",
+            "f": "log_natural",
+            "var": "dist_petroleum_s_wgs",
+            "type": "transform"
+        },
+        {
+            "name": "ln_dist_diamsec",
+            "f": "log_natural",
+            "var": "dist_diamsec_s_wgs",
+            "type": "transform"
+        },
+        {
+            "name": "mean_ged_dummy_ns",
+            "f": "mean",
+            "var": "ged_dummy_ns",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "ns",
+    "train_start": 205,
+    "train_end": 384,
+    "sim_start": 385,
+    "sim_end": 420,
+    "runtype": "eval",
+    "period": "calib"
+}

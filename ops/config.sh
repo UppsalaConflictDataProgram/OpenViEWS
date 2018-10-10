@@ -1,0 +1,22 @@
+RUN_ID=r.2018.10.01
+NAME_CURRENT=current
+DIR_RUNS=/storage/runs
+DIR_THIS_RUN=$DIR_RUNS/$NAME_CURRENT
+DIR_GITHUB=~/github/Views
+HOSTNAME_UPPMAX=rackham.uppmax.uu.se
+DIR_RUN_UPPMAX=/proj/snic2018-3-380/runs/current/
+DIR_DS_TRANSFORMS=$DIR_THIS_RUN/ds/transforms
+ENV_PY3_JANUS=~/py3/bin/activate
+PATH_FETCH_IMP=$DIR_GITHUB/ops/fetch_imp.py
+DIR_INPUT_PGM_DATA=$DIR_THIS_RUN/ds/input/pgm/data/
+DIR_INPUT_CM_DATA=$DIR_THIS_RUN/ds/input/cm/data/
+DIR_INPUT_PGM_SPATIAL=$DIR_THIS_RUN/ds/input/pgm/spatial/
+DIR_GITHUB_OPS=$DIR_GITHUB/ops/
+DIR_GITHUB_DS=$DIR_GITHUB/ds
+DIR_GITHUB_MODELS=$DIR_GITHUB/models
+DIR_LOGS_MAPS=$DIR_THIS_RUN/maps/logs/
+DIR_LOGS_ENSEMBLES=$DIR_THIS_RUN/ensemble/logs/
+DIR_LOGS_DESCRIPTIVE=$DIR_THIS_RUN/descriptive/logs/
+DIR_ARCHIVE=$DIR_RUNS/archive/$RUN_ID
+
+echo "ran config.sh"

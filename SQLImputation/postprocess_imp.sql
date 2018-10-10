@@ -1,0 +1,87 @@
+-- Select Geoimputed events AND multiply imputed rhs variables as new table
+-- To be used by n-step script
+DROP TABLE IF EXISTS launched.imp_imp_1;
+CREATE TABLE launched.imp_imp_1 AS
+SELECT
+  pg_id,
+  pgmimp1bnd.month_id,
+  ged_sb_dummy_1 AS ged_dummy_sb,
+  ged_ns_dummy_1 AS ged_dummy_ns,
+  ged_os_dummy_1 AS ged_dummy_os,
+  col,
+  row,
+  latitude,
+  longitude,
+  cmr_max,
+  cmr_mean,
+  cmr_min,
+  cmr_sd,
+  diamprim_s,
+  diamsec_s,
+  gem_s,
+  goldplacer_s,
+  goldvein_s,
+  goldsurface_s,
+  petroleum_s,
+  ttime_max,
+  ttime_mean,
+  ttime_min,
+  ttime_sd,
+  mountains_mean,
+  imr_max,
+  imr_mean,
+  imr_min,
+  rainseas,
+  growstart,
+  dist_diaprim_s_wgs,
+  dist_diamsec_s_wgs,
+  dist_petroleum_s_wgs,
+  dist_goldsurface_s_wgs,
+  dist_goldplace_s_wgs,
+  dist_goldvein_s_wgs,
+  dist_gem_s_wgs,
+  growend,
+  pop_li_gpw_sum,
+  excluded,
+  excluded_li,
+  gcp_li_mer,
+  droughtcrop_speibase,
+  droughtcrop_speigdm,
+  droughtyr_speibase,
+  droughtyr_speigdm,
+  droughtstart_speibase,
+  droughtstart_speigdm,
+  agri_ih_li,
+  barren_ih_li,
+  forest_ih_li,
+  grass_ih_li,
+  savanna_ih_li,
+  pasture_ih_li,
+  shrub_ih_li,
+  urban_ih_li,
+  bdist1,
+  bdist2,
+  bdist3,
+  capdist,
+  nlights_mean,
+  nlights_calib_mean,
+  bdist1_li,
+  capdist_li,
+  fvp_polity2,
+  v2x_libdem,
+  ssp2_gdppercap_oecd,
+  ssp2_gdppercap_iiasa,
+  v2x_polyarchy_li,
+  fvp_lngdp200_li,
+  fvp_population200_li,
+  acled_count_pr
+FROM launched.pgmimp1bnd LEFT JOIN
+  geoimputation.pgm
+ON
+  pgm.priogrid_gid=pgmimp1bnd.pg_id
+  AND
+  pgm.month_id=pgmimp1bnd.month_id
+WHERE 
+  pgmimp1bnd.year_id >= 1989
+  AND
+  pgmimp1bnd.year_id <= 2021;

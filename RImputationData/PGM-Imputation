@@ -1,0 +1,42 @@
+## IMPUTATION PGM-Data
+
+
+
+library(Amelia)
+# Use readRDS becaus load() and save() potentially polute the namespace
+# We should always use readRDS and saveRDS instead of load() and save() 
+pgm.df <- readRDS(file = "pgm.df.rds")
+#saveRDS(pgm.df, file = "Data/pgm.df.rds")
+
+idvars<-c("year_id","col","row","latitude","longitude","ged_dummy_sb_tlag2","ged_dummy_sb_tlag3",
+"ged_dummy_sb_tlag4","ged_dummy_sb_tlag5","ged_dummy_sb_tlag6" ,"ged_dummy_sb_tlag7"
+,"ged_dummy_sb_tlag8","ged_dummy_sb_tlag9","ged_dummy_sb_tlag10","ged_dummy_sb_tlag11"
+,"ged_dummy_sb_tlag12","ged_dummy_sb_lag1_tlag2","ged_dummy_sb_lag1_tlag3",
+"ged_dummy_sb_lag1_tlag4","ged_dummy_sb_lag1_tlag5","ged_dummy_sb_lag1_tlag6","ged_dummy_ns_tlag2",
+"ged_dummy_ns_tlag3","ged_dummy_ns_tlag4","ged_dummy_ns_tlag5","ged_dummy_ns_tlag6",
+"ged_dummy_ns_tlag7","ged_dummy_ns_tlag8","ged_dummy_ns_tlag9","ged_dummy_ns_tlag10",
+"ged_dummy_ns_tlag11","ged_dummy_ns_tlag12","ged_dummy_ns_lag1_tlag2","ged_dummy_ns_lag1_tlag3",
+"ged_dummy_ns_lag1_tlag4","ged_dummy_ns_lag1_tlag5","ged_dummy_ns_lag1_tlag6",
+"ged_dummy_os_tlag2","ged_dummy_os_tlag3","ged_dummy_os_tlag4",   
+"ged_dummy_os_tlag5","ged_dummy_os_tlag6","ged_dummy_os_tlag7",    
+"ged_dummy_os_tlag8","ged_dummy_os_tlag9","ged_dummy_os_tlag10",   
+"ged_dummy_os_tlag11","ged_dummy_os_tlag12","ged_dummy_os_lag1_tlag2",
+"ged_dummy_os_lag1_tlag3","ged_dummy_os_lag1_tlag4","ged_dummy_os_lag1_tlag5",
+"ged_dummy_os_lag1_tlag6")
+
+idvars<-c(idvars,"gwcode","goldsurface_s","goldplacer_s"
+          ,"ged_dummy_sb_lag1_tlag1","ged_dummy_ns_lag1_tlag1","ged_dummy_os_lag1_tlag1",
+          "diamprim_s", "diamsec_s", "gem_s", "goldvein_s", "petroleum_s")
+
+print(Sys.time())
+
+pgm.df.am<-amelia(pgm.df,m=1,idvars=idvars,ts="month_id",cs="pg_id",collect=T)
+
+print(Sys.time())
+
+saveRDS(pgm.df.am$imputations$imp1,file = "test.amelia4.rds")
+
+print("I'm done!")
+
+
+

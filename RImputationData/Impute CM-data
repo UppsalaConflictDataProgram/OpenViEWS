@@ -1,0 +1,28 @@
+### IMPUTATION CM-DATA
+
+
+library(Amelia)
+
+set.seed(1337)
+
+cm.df<-readRDS("cm.df.rds")
+cm.df2<-cm.df[which(cm.df$year_id<=2021),]
+cm.df.cor2<-cor(cm.df2[,1:155],use="pairwise.complete.obs")
+diag(cm.df.cor2)<-0
+sum(apply(is.na(cm.df2),2,sum))
+tt<-paste(rownames(cm.df.cor2)[which(apply(abs(cm.df.cor2),1,max)>0.98)],sep=",")
+tt3<-paste(rownames(cm.df.cor2)[which(apply(abs(cm.df.cor2),1,max)==1)],sep=",")
+tt4<-paste(rownames(cm.df.cor2)[which(apply(abs(cm.df.cor2),1,max)>0.99)],sep=",")
+tt2<-tt[c(1,11,15,17:38,40:54)]
+
+
+ids<-c("gwcode","id","name","v2x_mpi","fvp_participatory","v2xlg_elecreg","fvp_semi","fvp_regime3c",tt2)
+
+print(Sys.time())
+cm.df.am<-amelia(cm.df2,m=2,cs="country_id",ts="month_id",idvars=ids)
+print(Sys.time())
+print("I'm done! YAY!")
+
+saveRDS(cm.df.am$imputations$imp1,file = "cm.df.imp1.rds")
+saveRDS(cm.df.am$imputations$imp2,file = "cm.df.imp2.rds")
+

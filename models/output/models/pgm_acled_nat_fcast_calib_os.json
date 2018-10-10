@@ -1,0 +1,43 @@
+{
+    "name": "pgm_acled_nat_fcast_calib_os",
+    "name_base": "pgm_acled_nat",
+    "loa": "pgm",
+    "lhs": "ged_dummy_os",
+    "rhs": [
+        "ln_dist_diamsec",
+        "ln_dist_petroleum",
+        "agri_ih_li",
+        "barren_ih_li",
+        "forest_ih_li",
+        "mountains_mean",
+        "savanna_ih_li",
+        "shrub_ih_li",
+        "pasture_ih_li",
+        "urban_ih_li"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_os ~ ln_dist_diamsec + ln_dist_petroleum + agri_ih_li + barren_ih_li + forest_ih_li + mountains_mean + savanna_ih_li + shrub_ih_li + pasture_ih_li + urban_ih_li",
+    "transforms": [
+        {
+            "name": "ln_dist_petroleum",
+            "f": "log_natural",
+            "var": "dist_petroleum_s_wgs",
+            "type": "transform"
+        },
+        {
+            "name": "ln_dist_diamsec",
+            "f": "log_natural",
+            "var": "dist_diamsec_s_wgs",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "os",
+    "train_start": 205,
+    "train_end": 428,
+    "sim_start": 429,
+    "sim_end": 464,
+    "runtype": "fcast",
+    "period": "calib"
+}

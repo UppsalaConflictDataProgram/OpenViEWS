@@ -1,0 +1,28 @@
+{
+    "name": "pgm_acled_mean_fcast_calib_os",
+    "name_base": "pgm_acled_mean",
+    "loa": "pgm",
+    "lhs": "ged_dummy_os",
+    "rhs": [
+        "mean_ged_dummy_os"
+    ],
+    "stage": 1,
+    "formula": "ged_dummy_os ~ mean_ged_dummy_os",
+    "transforms": [
+        {
+            "name": "mean_ged_dummy_os",
+            "f": "mean",
+            "var": "ged_dummy_os",
+            "type": "transform"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "os",
+    "train_start": 205,
+    "train_end": 428,
+    "sim_start": 429,
+    "sim_end": 464,
+    "runtype": "fcast",
+    "period": "calib"
+}

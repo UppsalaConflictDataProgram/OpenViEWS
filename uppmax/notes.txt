@@ -1,0 +1,44 @@
+useful commands for uppmax
+
+to setup login without password follow this guide: http://uppmax.uu.se/support/faq/login-problems-faq/how-do-i-use-ssh-keys-to-login-to-uppmax/
+if your username on your local machine is different from your uppmax username use 
+$ ssh-keygen -t ed25519
+$ ssh-copy-id -i ~/.ssh/id_ed25519.pub username@rackham.uppmax.uu.se
+where username is your uppmax username
+
+
+our project datastore where we currently have 128GB of storage
+/proj/snic2017-7-47
+
+to set up python: http://uppmax.uu.se/support/user-guides/python-modules-guide/
+python 2.7.13 is the latest and the one we are using so commands for us are
+
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+
+#(logout and back in again)
+pyenv install 2.7.13
+pyenv global 2.7.13
+#(logout and back in again)
+pip install packagename
+
+# to show disk usage
+module load uppmax
+uquota
+
+# jobinfo -u username
+jobinfo -u VIEWSADMIN
+finishedjobinfo
+scancel -i -u VIEWSADMIN
+
+a slurm-jobid.out file is created in the directory where 
+sbatch jobfile.sh 
+was run, you can watch the progress with 
+tail -f  slurm-jobid.out
+
+# To restrict numpy to a single core
+export MKL_NUM_THREADS=1
+export NUMEXPR_NUM_THREADS=1
+export OMP_NUM_THREADS=1

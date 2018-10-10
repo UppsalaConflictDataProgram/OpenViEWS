@@ -1,0 +1,280 @@
+{
+    "name": "pgm_acled_meancmhist_fcast_calib_pr",
+    "name_base": "pgm_acled_meancmhist",
+    "loa": "pgm",
+    "lhs": "acled_dummy_pr",
+    "rhs": [
+        "l2_acled_dummy_pr",
+        "l3_acled_dummy_pr",
+        "l4_acled_dummy_pr",
+        "l5_acled_dummy_pr",
+        "l6_acled_dummy_pr",
+        "l7_acled_dummy_pr",
+        "l8_acled_dummy_pr",
+        "l9_acled_dummy_pr",
+        "l10_acled_dummy_pr",
+        "l11_acled_dummy_pr",
+        "l12_acled_dummy_pr",
+        "q_1_1_l2_acled_dummy_pr",
+        "q_1_1_l3_acled_dummy_pr",
+        "mean_acled_dummy_pr",
+        "fvp_lngdpcap_nonoilrent",
+        "fvp_lngdpcap_oilrent",
+        "fvp_grgdpcap_oilrent",
+        "fvp_grgdpcap_nonoilrent",
+        "ln_fvp_timeindep",
+        "ln_fvp_timesincepreindepwar",
+        "ln_fvp_timesinceregimechange",
+        "fvp_demo",
+        "fvp_semi",
+        "fvp_prop_excluded",
+        "ln_fvp_population200",
+        "ssp2_edu_sec_15_24_prop",
+        "ssp2_urban_share_iiasa",
+        "l1_ged_dummy_sb",
+        "l1_ged_dummy_ns",
+        "l1_ged_dummy_os",
+        "l1_acled_dummy_pr",
+        "decay_12_cw_ged_dummy_sb_0",
+        "decay_12_cw_ged_dummy_ns_0",
+        "decay_12_cw_ged_dummy_os_0",
+        "decay_12_cw_acled_dummy_pr_0",
+        "q_1_1_l1_ged_dummy_sb",
+        "q_1_1_l1_ged_dummy_ns",
+        "q_1_1_l1_ged_dummy_os",
+        "q_1_1_l1_acled_dummy_pr"
+    ],
+    "stage": 1,
+    "formula": "acled_dummy_pr ~ l2_acled_dummy_pr + l3_acled_dummy_pr + l4_acled_dummy_pr + l5_acled_dummy_pr + l6_acled_dummy_pr + l7_acled_dummy_pr + l8_acled_dummy_pr + l9_acled_dummy_pr + l10_acled_dummy_pr + l11_acled_dummy_pr + l12_acled_dummy_pr + q_1_1_l2_acled_dummy_pr + q_1_1_l3_acled_dummy_pr + mean_acled_dummy_pr + fvp_lngdpcap_nonoilrent + fvp_lngdpcap_oilrent + fvp_grgdpcap_oilrent + fvp_grgdpcap_nonoilrent + ln_fvp_timeindep + ln_fvp_timesincepreindepwar + ln_fvp_timesinceregimechange + fvp_demo + fvp_semi + fvp_prop_excluded + ln_fvp_population200 + ssp2_edu_sec_15_24_prop + ssp2_urban_share_iiasa + l1_ged_dummy_sb + l1_ged_dummy_ns + l1_ged_dummy_os + l1_acled_dummy_pr + decay_12_cw_ged_dummy_sb_0 + decay_12_cw_ged_dummy_ns_0 + decay_12_cw_ged_dummy_os_0 + decay_12_cw_acled_dummy_pr_0 + q_1_1_l1_ged_dummy_sb + q_1_1_l1_ged_dummy_ns + q_1_1_l1_ged_dummy_os + q_1_1_l1_acled_dummy_pr",
+    "transforms": [
+        {
+            "name": "l11_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 11,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_os",
+            "var": "l1_ged_dummy_os",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l6_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 6,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l2_acled_dummy_pr",
+            "var": "l2_acled_dummy_pr",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "cw_ged_dummy_ns_0",
+            "var": "ged_dummy_ns",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_os_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_os_0",
+            "type": "transform"
+        },
+        {
+            "name": "decay_12_cw_acled_dummy_pr_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_acled_dummy_pr_0",
+            "type": "transform"
+        },
+        {
+            "name": "l9_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 9,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l1_acled_dummy_pr",
+            "var": "l1_acled_dummy_pr",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "cw_ged_dummy_os_0",
+            "var": "ged_dummy_os",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "cw_acled_dummy_pr_0",
+            "var": "acled_dummy_pr",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_sb_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_sb_0",
+            "type": "transform"
+        },
+        {
+            "name": "l3_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 3,
+            "type": "ts"
+        },
+        {
+            "name": "l10_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 10,
+            "type": "ts"
+        },
+        {
+            "name": "l1_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "decay_12_cw_ged_dummy_ns_0",
+            "f": "decay",
+            "halflife": 12,
+            "var": "cw_ged_dummy_ns_0",
+            "type": "transform"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_sb",
+            "var": "l1_ged_dummy_sb",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l12_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 12,
+            "type": "ts"
+        },
+        {
+            "name": "mean_acled_dummy_pr",
+            "f": "mean",
+            "var": "acled_dummy_pr",
+            "type": "transform"
+        },
+        {
+            "name": "l5_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 5,
+            "type": "ts"
+        },
+        {
+            "name": "ln_fvp_timesincepreindepwar",
+            "f": "log_natural",
+            "var": "fvp_timesincepreindepwar",
+            "type": "transform"
+        },
+        {
+            "name": "ln_fvp_population200",
+            "f": "log_natural",
+            "var": "fvp_population200",
+            "type": "transform"
+        },
+        {
+            "name": "q_1_1_l1_ged_dummy_ns",
+            "var": "l1_ged_dummy_ns",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "l1_ged_dummy_ns",
+            "var": "ged_dummy_ns",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "q_1_1_l3_acled_dummy_pr",
+            "var": "l3_acled_dummy_pr",
+            "srule": "q",
+            "first": 1,
+            "last": 1,
+            "type": "spatial"
+        },
+        {
+            "name": "cw_ged_dummy_sb_0",
+            "var": "ged_dummy_sb",
+            "cw": "==0",
+            "type": "ts"
+        },
+        {
+            "name": "l7_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 7,
+            "type": "ts"
+        },
+        {
+            "name": "l8_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 8,
+            "type": "ts"
+        },
+        {
+            "name": "l1_ged_dummy_sb",
+            "var": "ged_dummy_sb",
+            "lag": 1,
+            "type": "ts"
+        },
+        {
+            "name": "l2_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 2,
+            "type": "ts"
+        },
+        {
+            "name": "ln_fvp_timesinceregimechange",
+            "f": "log_natural",
+            "var": "fvp_timesinceregimechange",
+            "type": "transform"
+        },
+        {
+            "name": "l4_acled_dummy_pr",
+            "var": "acled_dummy_pr",
+            "lag": 4,
+            "type": "ts"
+        },
+        {
+            "name": "ln_fvp_timeindep",
+            "f": "log_natural",
+            "var": "fvp_timeindep",
+            "type": "transform"
+        },
+        {
+            "name": "l1_ged_dummy_os",
+            "var": "ged_dummy_os",
+            "lag": 1,
+            "type": "ts"
+        }
+    ],
+    "groupvar": "pg_id",
+    "timevar": "month_id",
+    "outcome_extension": "pr",
+    "train_start": 205,
+    "train_end": 428,
+    "sim_start": 429,
+    "sim_end": 464,
+    "runtype": "fcast",
+    "period": "calib"
+}
